@@ -12,8 +12,10 @@ const Template: ComponentStory<typeof ReviewStar> = (args) => (
   <ReviewStar {...args} />
 );
 
-export const ReviewStarOne = Template.bind({});
+const ReviewStarOne = Template.bind({});
 ReviewStarOne.args = {
   provider: "Report Guru",
   rating: 3.3
 };
+
+export { ReviewStarOne };

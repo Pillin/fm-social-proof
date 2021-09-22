@@ -1,20 +1,20 @@
 import styled from "@emotion/styled";
 
-export const P = styled.p`
-  color: hsl(0, 0%, 100%);
+export const P = styled.p<{ isDark?: boolean }>`
+  color: ${({ isDark }) =>
+    isDark ? "hsl(303, 10%, 53%)" : "hsl(0, 0%, 100%)"};
   margin: 0px;
   font-weight: 300;
+  font-size: 14px;
   line-height: 24px;
   font-family: "Lexend Deca", sans-serif;
 `;
 
 export const H1 = styled.h1`
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsl(300, 43%, 22%);
   font-weight: 600;
-  text-transform: uppercase;
   margin: 0px;
   font-size: 2rem;
-  font-family: "Big Shoulders Display", cursive;
 `;
 export const H2 = styled.h2`
   color: hsla(0, 0%, 100%, 0.75);
@@ -26,7 +26,7 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
   color: hsl(300, 43%, 22%);
-  font-size: 16px;
+  font-size: 12px;
   margin: 0px;
 `;
 export const H4 = styled.h4`

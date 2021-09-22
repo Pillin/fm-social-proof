@@ -1,7 +1,5 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ReviewStarOne } from "../components/ReviewStar.stories";
-import { ReviewCardOne } from "../components/ReviewCard.stories";
 
 import Home from "../../Home";
 import "../../styles.css";
@@ -17,7 +15,7 @@ export const HomePage = Template.bind({});
 HomePage.args = {
   title: "10,000+ of our users love our products.",
   description:
-    "We only prvde great products combined with excellent customer service. See what our satisfied customers are saying about our services.",
-  ratingList: [ReviewStarOne.args],
-  reviewList: [ReviewCardOne.args]
+    "We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.",
+  ratingList: [],
+  reviewList: []
 };

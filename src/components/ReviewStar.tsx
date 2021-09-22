@@ -6,13 +6,18 @@ import { H3 } from "./Typography";
 const Container = styled.section`
   border-radius: 10px;
   background-color: hsl(300, 24%, 96%);
-  height: 48px;
-  width: 240px;
+  height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px 0px;
   align-items: center;
   padding: 16px;
+  @media (min-width: 769px) {
+    flex-direction: row;
+    gap: 0px 16px;
+    max-width: 400px;
+  }
 `;
 
 const Star = styled.section<{ rating: number }>`

@@ -4,7 +4,15 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+#root {
   margin: 0px;
+  padding: 0px;
   font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

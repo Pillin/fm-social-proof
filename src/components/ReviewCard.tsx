@@ -7,15 +7,19 @@ const Container = styled.section`
   background-color: hsl(300, 43%, 22%);
   border-radius: 10px;
   padding: 24px;
-  width: 240px;
+  width: 100%;
+  height: 212px;
+  @media (min-width: 769px) {
+    max-width: 400px;
+  }
 `;
 
 const Row = styled.section`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 70px;
-  padding: 0px;
+  height: 60px;
+  padding: 0px 0px 16px 0px;
   gap: 0px 16px;
   justify-content: center;
   align-content: flex-start;
